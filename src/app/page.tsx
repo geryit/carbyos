@@ -32,6 +32,27 @@ export default function Home() {
               Schedule a Demo
             </button>
           </div>
+
+          <div className="flex justify-center mb-6">
+            <div className="flex items-center space-x-2 bg-purple-100 text-purple-700 px-3 py-1 rounded-full">
+              <span className="text-sm font-semibold">New</span>
+              <span className="text-sm">Smart summarization</span>
+              <svg
+                className="h-4 w-4 text-gray-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+            </div>
+          </div>
         </div>
       </header>
       <main className="h-[100rem]">sdf</main>
