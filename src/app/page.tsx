@@ -6,9 +6,9 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div>
+    <div className="font-cm">
       <div className="h-4" />
-      <div className="w-full max-w-[48.75rem] sticky top-0 h-16  m-auto rounded-full p-4 flex items-center backdrop-blur bg-black/80">
+      <div className="w-full max-w-[48.75rem] sticky top-0 h-16 m-auto rounded-full p-4 flex items-center backdrop-blur bg-black/80 z-10">
         <Image src={Logo} alt={"Logo"} className="ml-2" />
         <ul className="flex-1 flex justify-center gap-10 font-cm">
           <li>
@@ -27,7 +27,7 @@ export default function Home() {
             </Link>
           </li>
         </ul>
-        <button className="text-xs bg-green-300 hover:bg-gray-400 text-gray-910 py-2 px-4 rounded-full font-isb">
+        <button className="text-xs bg-[#52B784] hover:bg-gray-400 text-gray-910 py-2 px-4 rounded-full font-isb">
           Schedule a Demo
         </button>
       </div>
@@ -51,7 +51,7 @@ export default function Home() {
           </p>
 
           <div className="mt-6 flex items-center gap-4">
-            <button className="text-xs bg-green-300 hover:bg-gray-400 text-gray-910 py-2 px-4 rounded-full font-isb">
+            <button className="text-xs bg-[#52B784] hover:bg-gray-400 text-gray-910 py-2 px-4 rounded-full font-isb">
               Schedule a Demo
             </button>
             <button className="text-xs py-2 px-4 rounded-full font-isb flex items-center gap-2 border border-white text-white">
@@ -76,7 +76,6 @@ export default function Home() {
           Trusted by 1,200+ providers, 200+ clinics and counting...
         </p>
       </section>
-
       <section className="max-w-screen-2xl mx-auto h-[67.5rem] ball relative flex justify-end py-20 px-36">
         <Image
           src="/static/images/carbonos/tablet-screen1.png"
@@ -106,7 +105,7 @@ export default function Home() {
             else.
           </h2>
           <div className="mt-4">
-            <button className="text-base bg-green-300 hover:bg-gray-400 text-gray-910 py-4 px-6 rounded-full font-isb">
+            <button className="text-base bg-[#52B784] hover:bg-gray-400 text-gray-910 py-4 px-6 rounded-full font-isb">
               Schedule a Demo
             </button>
           </div>
@@ -138,7 +137,7 @@ export default function Home() {
               },
             ].map((item) => (
               <li key={item.icon} className="flex items-center gap-3">
-                <div className="p-3 bg-gray-800 rounded-lg">
+                <div className="p-3 bg-[#313634] rounded-lg">
                   <Image
                     src={`/static/images/carbonos/icon-${item.icon}.svg`}
                     width={20}
@@ -152,6 +151,131 @@ export default function Home() {
           </ul>
         </div>
       </section>
+      <section className="max-w-screen-2xl mx-auto py-32 bg-[#1A2E2C]">
+        <div className="grid grid-cols-2 px-[9.125rem] gap-5">
+          <div className="grid gap-8">
+            <Image
+              src={`/static/images/carbonos/waves.svg`}
+              width={585}
+              height={0}
+              alt={`wave`}
+              className="ml-[-9.2rem]"
+            />
+
+            <div>
+              <span className="text-white text-[2.5rem]">
+                Let AI do the legwork.
+              </span>
+              <div className="mt-4">
+                <button className="text-xs bg-[#52B784] hover:bg-gray-400 text-gray-910 py-2 px-4 rounded-full font-isb">
+                  Schedule a Demo
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 gap-8">
+            <div>
+              <span className="text-white text-[3.25rem]">2,000</span>
+              <div className="text-white/70 font-ttr mt-4">
+                Providers using CareBy
+              </div>
+            </div>
+            <div>
+              <span className="text-white text-[3.25rem]">500K+</span>
+              <div className="text-white/70 font-ttr mt-4">
+                AI-powered charts created
+              </div>
+            </div>
+
+            <div>
+              <span className="text-white text-[3.25rem]">1,200</span>
+              <div className="text-white/70 font-ttr mt-4">
+                Keystrokes saved per visit
+              </div>
+            </div>
+            <div>
+              <span className="text-white text-[3.25rem]">60 mins</span>
+              <div className="text-white/70 font-ttr mt-4">
+                Training to EHR fluency
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <ul className="grid grid-cols-2 gap-5">
+          {[
+            {
+              icon: "soap",
+              title: "Write SOAP notes",
+            },
+            {
+              icon: "patient-instructions",
+              title: "Patient Instructions",
+            },
+            {
+              icon: "cpt",
+              title: "Automate CPT Coding",
+            },
+            {
+              icon: "find",
+              title: "Find ICD-10 Codes",
+            },
+            {
+              icon: "write",
+              title: "Write work/school notes",
+            },
+            {
+              icon: "schedule-followup",
+              title: "Schedule follow-ups",
+            },
+            {
+              icon: "fillout",
+              title: "Fill-out forms",
+            },
+            {
+              icon: "db",
+              title: "Create Referral Packages",
+            },
+            {
+              icon: "realtime",
+              title: "Real-time Clinical Suggestions",
+            },
+            {
+              icon: "call",
+              title: "Call Processing",
+            },
+          ].map((item) => (
+            <li
+              key={item.icon}
+              className="flex items-center gap-3 bg-[#142221] p-4 rounded-lg"
+            >
+              <div className="p-3 bg-[#313634] rounded-lg">
+                <Image
+                  src={`/static/images/carbonos/icon-${item.icon}.svg`}
+                  width={36}
+                  height={0}
+                  alt={`${item.title} icon`}
+                />
+              </div>
+              <span className="text-white font-cm text-xl">{item.title}</span>
+            </li>
+          ))}
+        </ul>
+
+        <div className="mt-20 flex flex-col justify-center text-center">
+          <h3 className="text-4xl text-transparent bg-clip-text bg-gradient-to-br from-[#44706D] to-[#83D6D1]">
+            We make switching a breeze.
+          </h3>
+          <div className="mt-10">
+            <button className="font-isb py-6 px-6  bg-gradient-to-br from-[#548F8C] to-[#33B4AD] hover:bg-gray-400 text-gray-910 rounded-full">
+              Let&apos;s Talk
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <footer className="h-48"></footer>
     </div>
   );
 }
