@@ -152,21 +152,21 @@ export default function Home() {
         </div>
       </section>
       <section className="max-w-screen-2xl mx-auto py-32 bg-[#1A2E2C]">
-        <div className="grid grid-cols-2 px-[9.125rem] gap-5">
+        <div className="grid grid-cols-2 gap-5">
           <div className="grid gap-8">
             <Image
               src={`/static/images/carbonos/waves.svg`}
-              width={585}
+              width={680}
               height={0}
               alt={`wave`}
-              className="ml-[-9.2rem]"
+              className=""
             />
 
-            <div>
+            <div className="pl-[11rem] mt-6">
               <span className="text-white text-[2.5rem]">
                 Let AI do the legwork.
               </span>
-              <div className="mt-4">
+              <div className="mt-6">
                 <button className="text-xs bg-[#52B784] hover:bg-gray-400 text-gray-910 py-2 px-4 rounded-full font-isb">
                   Schedule a Demo
                 </button>
@@ -174,36 +174,24 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-8">
-            <div>
-              <span className="text-white text-[3.25rem]">2,000</span>
-              <div className="text-white/70 font-ttr mt-4">
-                Providers using CareBy
-              </div>
-            </div>
-            <div>
-              <span className="text-white text-[3.25rem]">500K+</span>
-              <div className="text-white/70 font-ttr mt-4">
-                AI-powered charts created
-              </div>
-            </div>
-
-            <div>
-              <span className="text-white text-[3.25rem]">1,200</span>
-              <div className="text-white/70 font-ttr mt-4">
-                Keystrokes saved per visit
-              </div>
-            </div>
-            <div>
-              <span className="text-white text-[3.25rem]">60 mins</span>
-              <div className="text-white/70 font-ttr mt-4">
-                Training to EHR fluency
-              </div>
-            </div>
-          </div>
+          <ul className="grid grid-cols-2 gap-y-16 mt-4 pr-[9.125rem]">
+            {[
+              ["2000", "Providers using CareBy"],
+              ["500K+", "AI-powered charts created"],
+              ["1,200", "Keystrokes saved per visit"],
+              ["60 mins", "Training to EHR fluency"],
+            ].map(([num, description]) => (
+              <li key={num}>
+                <span className="text-white text-[3.25rem]">{num}</span>
+                <div className="text-white/70 font-ttm mt-1 text-xl max-w-44">
+                  {description}
+                </div>
+              </li>
+            ))}
+          </ul>
         </div>
 
-        <ul className="grid grid-cols-2 gap-5">
+        <ul className="grid grid-cols-2 gap-5 mt-16 max-w-[78rem] m-auto">
           {[
             {
               icon: "soap",
@@ -248,9 +236,9 @@ export default function Home() {
           ].map((item) => (
             <li
               key={item.icon}
-              className="flex items-center gap-3 bg-[#142221] p-4 rounded-lg"
+              className="flex items-center gap-3 bg-[#142221] px-8 rounded-3xl min-h-[8.25rem]"
             >
-              <div className="p-3 bg-[#313634] rounded-lg">
+              <div className="p-3 bg-[#111E1D] rounded-lg">
                 <Image
                   src={`/static/images/carbonos/icon-${item.icon}.svg`}
                   width={36}
@@ -263,12 +251,12 @@ export default function Home() {
           ))}
         </ul>
 
-        <div className="mt-20 flex flex-col justify-center text-center">
+        <div className="mt-14 flex flex-col justify-center text-center">
           <h3 className="text-4xl text-transparent bg-clip-text bg-gradient-to-br from-[#44706D] to-[#83D6D1]">
             We make switching a breeze.
           </h3>
           <div className="mt-10">
-            <button className="font-isb py-6 px-6  bg-gradient-to-br from-[#548F8C] to-[#33B4AD] hover:bg-gray-400 text-gray-910 rounded-full">
+            <button className="font-isb py-5 px-6  bg-gradient-to-br from-[#548F8C] to-[#33B4AD] hover:bg-gray-400 text-gray-910 rounded-full">
               Let&apos;s Talk
             </button>
           </div>
