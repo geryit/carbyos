@@ -84,7 +84,7 @@ export default function Home() {
           Trusted by 1,200+ providers, 200+ clinics and counting...
         </p>
       </section>
-      <section className="max-w-screen-2xl mx-auto lg:min-h-[67.5rem] ball relative flex flex-col lg:flex-row justify-end pt-80 lg:pt-0 pb-80 lg:pb-20 px-6 lg:px-36 overflow-hidden">
+      <section className="max-w-screen-2xl mx-auto lg:min-h-[67.5rem] ball relative flex flex-col lg:flex-row justify-end pt-80 lg:pt-0 pb-60 lg:pb-20 px-6 lg:px-36 overflow-hidden">
         <Image
           src="/static/images/carbonos/tablet-screen1.png"
           width={714}
@@ -174,19 +174,19 @@ export default function Home() {
           className="lg:hidden absolute max-w-[35rem] -left-4 -bottom-20 rotate-[15deg]"
         />
       </section>
-      <section className="max-w-screen-2xl mx-auto py-32 bg-[#1A2E2C]">
-        <div className="grid grid-cols-2 gap-5">
+      <section className="max-w-screen-2xl mx-auto py-10 sm:py-32 bg-[#1A2E2C]">
+        <div className="grid sm:grid-cols-2 gap-5">
           <div className="grid gap-8">
             <Image
               src={`/static/images/carbonos/waves.svg`}
               width={680}
               height={0}
               alt={`wave`}
-              className=""
+              className="max-w-[330px] sm:max-w-full"
             />
 
-            <div className="pl-[11rem] mt-6">
-              <span className="text-white text-[2.5rem]">
+            <div className="pl-6 sm:pl-[11rem] mt-6">
+              <span className="text-white text-3xl sm:text-[2.5rem]">
                 Let AI do the legwork.
               </span>
               <div className="mt-6">
@@ -197,7 +197,7 @@ export default function Home() {
             </div>
           </div>
 
-          <ul className="grid grid-cols-2 gap-y-16 mt-4 pr-[9.125rem]">
+          <ul className="grid grid-cols-2 gap-y-16 mt-4 px-6 sm:pr-[9.125rem]">
             {[
               ["2000", "Providers using CareBy"],
               ["500K+", "AI-powered charts created"],
@@ -205,8 +205,10 @@ export default function Home() {
               ["60 mins", "Training to EHR fluency"],
             ].map(([num, description]) => (
               <li key={num}>
-                <span className="text-white text-[3.25rem]">{num}</span>
-                <div className="text-white/70 font-ttm mt-1 text-xl max-w-44">
+                <span className="text-white text-4xl sm:text-[3.25rem]">
+                  {num}
+                </span>
+                <div className="text-white/70 font-ttm mt-1 sm:text-xl max-w-44">
                   {description}
                 </div>
               </li>
@@ -214,7 +216,7 @@ export default function Home() {
           </ul>
         </div>
 
-        <ul className="grid grid-cols-2 gap-5 mt-16 max-w-[78rem] m-auto">
+        <ul className="grid sm:grid-cols-2 gap-3 sm:gap-5 mt-8 sm:mt-16 max-w-[78rem] m-auto px-6 sm:px-0">
           {[
             {
               icon: "soap",
@@ -259,9 +261,9 @@ export default function Home() {
           ].map((item) => (
             <li
               key={item.icon}
-              className="flex items-center gap-3 bg-[#142221] px-8 rounded-3xl min-h-[8.25rem]"
+              className="flex items-center gap-1 sm:gap-3 bg-[#142221] px-4 sm:px-8 rounded-3xl min-h-[4.5rem] sm:min-h-[8.25rem] "
             >
-              <div className="p-3 bg-[#111E1D] rounded-lg">
+              <div className="p-2 sm:p-3 bg-[#111E1D] rounded-lg">
                 <Image
                   src={`/static/images/carbonos/icon-${item.icon}.svg`}
                   width={36}
@@ -269,13 +271,15 @@ export default function Home() {
                   alt={`${item.title} icon`}
                 />
               </div>
-              <span className="text-white font-cm text-xl">{item.title}</span>
+              <span className="text-white font-cm sm:text-xl">
+                {item.title}
+              </span>
             </li>
           ))}
         </ul>
 
         <div className="mt-14 flex flex-col justify-center text-center">
-          <h3 className="text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#45706E] to-[#82D5D0]">
+          <h3 className="text-3xl sm:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#45706E] to-[#82D5D0] px-6">
             We make switching a breeze.
           </h3>
           <div className="mt-10">
@@ -286,7 +290,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="max-w-screen-2xl mx-auto p-[9.75rem] bg-[#181818] h-[51.75rem] relative">
+      <section className="max-w-screen-2xl mx-auto p-[9.75rem] bg-[#181818] h-[51.75rem] relative hidden sm:block">
         <Image
           src={`/static/images/carbonos/billing-bg.png`}
           width={1512}
@@ -344,7 +348,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="max-w-screen-2xl mx-auto p-[7rem] flex flex-col items-center text-center ">
+      <section className="max-w-screen-2xl mx-auto p-[7rem] flex-col items-center text-center hidden sm:flex">
         <Image
           src={`/static/images/carbonos/nice.svg`}
           width={85}
@@ -363,7 +367,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="max-w-screen-2xl mx-auto pt-20 pb-40 px-24 bg-[#192E2C] flex min-h-[26rem]">
+      <footer className="max-w-screen-2xl mx-auto pt-20 pb-40 px-24 bg-[#192E2C] min-h-[26rem] hidden sm:flex">
         <div className="flex-1 flex flex-col">
           <Image
             src={`/static/images/carbonos/careby-logo.svg`}
