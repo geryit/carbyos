@@ -2,6 +2,7 @@ import Image from "next/image";
 import Logo from "../../public/static/images/carbonos/carbyos-logo.svg";
 import ArrowDown from "../../public/static/images/carbonos/arrow-down.svg";
 import ArrowRight from "../../public/static/images/carbonos/arrow-right.svg";
+import Hamburger from "../../public/static/images/carbonos/hamburger.svg";
 import Link from "next/link";
 
 export default function Home() {
@@ -30,6 +31,9 @@ export default function Home() {
         <button className="text-xs bg-[#52B784] hover:bg-gray-400 text-gray-910 py-2 px-4 rounded-full font-isb">
           Schedule a Demo
         </button>
+        <span>
+          <Image src={Hamburger} alt={"Logo"} className="ml-2" />
+        </span>
       </div>
       <header className="max-w-screen-2xl mx-auto bg-gray-100 ball pt-48 -mt-20">
         <div className="text-center flex flex-col items-center ">
