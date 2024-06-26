@@ -27,7 +27,7 @@ export default function Home() {
             </Link>
           </li>
         </ul>
-        <button className="text-xs bg-green-300 text-gray-910 py-2 px-4 rounded-full font-isb">
+        <button className="text-xs bg-green-300 hover:bg-gray-400 text-gray-910 py-2 px-4 rounded-full font-isb">
           Schedule a Demo
         </button>
       </div>
@@ -51,7 +51,7 @@ export default function Home() {
           </p>
 
           <div className="mt-6 flex items-center gap-4">
-            <button className="text-xs bg-green-300 text-gray-910 py-2 px-4 rounded-full font-isb">
+            <button className="text-xs bg-green-300 hover:bg-gray-400 text-gray-910 py-2 px-4 rounded-full font-isb">
               Schedule a Demo
             </button>
             <button className="text-xs py-2 px-4 rounded-full font-isb flex items-center gap-2 border border-white text-white">
@@ -64,13 +64,94 @@ export default function Home() {
             <Image
               src="/static/images/carbonos/hero.png"
               width={1076}
-              height={500}
+              height={576}
               alt="Hero image"
+              priority
             />
           </div>
         </div>
       </header>
-      <main className="h-[100rem]">sdf</main>
+      <section className="min-h-36 flex justify-center items-center ">
+        <p className="font-cm text-white text-2xl">
+          Trusted by 1,200+ providers, 200+ clinics and counting...
+        </p>
+      </section>
+
+      <section className="max-w-screen-2xl mx-auto h-[67.5rem] ball relative flex justify-end py-20 px-36">
+        <Image
+          src="/static/images/carbonos/tablet-screen1.png"
+          width={714}
+          height={714}
+          alt="Tablet screen 1"
+          className="absolute top-0 left-0"
+        />
+        <Image
+          src="/static/images/carbonos/tablet-screen2.png"
+          width={1829 / 2}
+          height={1248 / 2}
+          alt="Tablet screen 2"
+          className="absolute left-0 bottom-0"
+        />
+        <Image
+          src="/static/images/carbonos/mobile-screen1.png"
+          width={1168 / 2}
+          height={950 / 2}
+          alt="Mobile screen 1"
+          className="absolute right-0 bottom-0"
+        />
+
+        <div className="max-w-[35rem]">
+          <h2 className="text-white">
+            You take care of your patients & clinic, we will handle everything
+            else.
+          </h2>
+          <div className="mt-4">
+            <button className="text-base bg-green-300 hover:bg-gray-400 text-gray-910 py-4 px-6 rounded-full font-isb">
+              Schedule a Demo
+            </button>
+          </div>
+          <ul className="mt-16 grid grid-cols-2 gap-y-3 gap-x-4">
+            {[
+              {
+                icon: "ehr",
+                title: "EHR",
+              },
+              {
+                icon: "employer-portal",
+                title: "Employer Portal",
+              },
+              {
+                icon: "practice-management",
+                title: "Practice Management",
+              },
+              {
+                icon: "patient-app",
+                title: "Patient App",
+              },
+              {
+                icon: "billing-hub",
+                title: "Billing Hub",
+              },
+              {
+                icon: "online-scheduling",
+                title: "Online Scheduling",
+              },
+            ].map((item) => (
+              <li key={item.icon} className="flex items-center gap-3">
+                <div className="p-3 bg-gray-800 rounded-lg">
+                  <Image
+                    src={`/static/images/carbonos/icon-${item.icon}.svg`}
+                    width={20}
+                    height={0}
+                    alt={`${item.title} icon`}
+                  />
+                </div>
+                <span className="text-white font-cm text-xl">{item.title}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
     </div>
   );
 }
