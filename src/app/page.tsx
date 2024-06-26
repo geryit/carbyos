@@ -252,14 +252,72 @@ export default function Home() {
         </ul>
 
         <div className="mt-14 flex flex-col justify-center text-center">
-          <h3 className="text-4xl text-transparent bg-clip-text bg-gradient-to-br from-[#44706D] to-[#83D6D1]">
+          <h3 className="text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#45706E] to-[#82D5D0]">
             We make switching a breeze.
           </h3>
           <div className="mt-10">
-            <button className="font-isb py-5 px-6  bg-gradient-to-br from-[#548F8C] to-[#33B4AD] hover:bg-gray-400 text-gray-910 rounded-full">
+            <button className="font-isb py-5 px-6 bg-gradient-to-r from-[#548F8C] to-[#33B4AD] hover:bg-gray-400 text-gray-910 rounded-full">
               Let&apos;s Talk
             </button>
           </div>
+        </div>
+      </section>
+
+      <section className="max-w-screen-2xl mx-auto p-[9.75rem] bg-[#181818] h-[51.75rem] relative">
+        <Image
+          src={`/static/images/carbonos/billing-bg.png`}
+          width={1512}
+          height={0}
+          alt={`billing background`}
+          className="absolute top-0 right-0"
+        />
+
+        <div className="relative">
+          <div className="flex items-center gap-2">
+            <div className="bg-[#2F2F2F] p-2 rounded-lg">
+              <Image
+                src={`/static/images/carbonos/icon-doc.svg`}
+                width={14}
+                height={0}
+                alt={`billing background`}
+                className=""
+              />
+            </div>
+            <h4 className="text-[#52B784] text-xs font-ttb uppercase">
+              Billing Hub
+            </h4>
+          </div>
+          <h2 className="text-white mt-8 max-w-[26.5rem] text-5xl leading-tight">
+            Don&apos;t leave money on the table
+          </h2>
+          <div className="mt-6">
+            <button className="text-xs bg-[#FAFAFA] hover:bg-gray-400 text-gray-910 py-2 px-4 rounded-full font-isb">
+              Schedule a Demo
+            </button>
+          </div>
+
+          <ul className="flex flex-col gap-6 mt-16">
+            {[
+              "Online patient collections",
+              "Real-time out of pocket calculator",
+              "Apple Pay & Android Pay",
+              "Point-of-Sale Terminals",
+              "Powerful RCM",
+            ].map((item) => (
+              <li key={item} className="flex items-center gap-4">
+                <span className=" w-[16px] h-[16px] flex items-center justify-center bg-[#A9E2B3] rounded-full">
+                  <Image
+                    src={`/static/images/carbonos/icon-tick.svg`}
+                    width={10}
+                    height={0}
+                    alt={`icon tick`}
+                    className=""
+                  />
+                </span>
+                <span className="text-white text-xl">{item}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
