@@ -9,36 +9,39 @@ export default function Home() {
   return (
     <div className="font-cm text-white bg-[#181818]">
       <div className="h-4" />
-      <div className="w-full max-w-[48.75rem] sticky top-0 h-16 m-auto rounded-full p-4 flex items-center backdrop-blur bg-black/80 z-10">
-        <Image src={Logo} alt={"Logo"} className="ml-2" />
-        <ul className="flex-1 flex justify-center gap-10 font-cm">
-          <li>
-            <span className="flex items-baseline text-white gap-2">
-              Suite <Image src={ArrowDown} alt={"Down arrow"} />
-            </span>
-          </li>
-          <li>
-            <Link href="#" className=" text-white">
-              Features
-            </Link>
-          </li>
-          <li>
-            <Link href="#" className=" text-white">
-              Pricing
-            </Link>
-          </li>
-        </ul>
-        <button className="text-xs bg-[#52B784] hover:bg-gray-400 text-gray-910 py-2 px-4 rounded-full font-isb">
-          Schedule a Demo
-        </button>
-        <span>
-          <Image src={Hamburger} alt={"Logo"} className="ml-2" />
-        </span>
+      <div className="sticky top-0 px-6">
+        <div className="max-w-[48.75rem] h-16 m-auto rounded-full p-4 flex items-center backdrop-blur bg-black/80 z-10">
+          <Image src={Logo} alt={"Logo"} className="ml-2" />
+          <ul className="flex-1 hidden sm:flex justify-center gap-10 font-cm">
+            <li>
+              <span className="flex items-baseline text-white gap-2">
+                Suite <Image src={ArrowDown} alt={"Down arrow"} />
+              </span>
+            </li>
+            <li>
+              <Link href="#" className=" text-white">
+                Features
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className=" text-white">
+                Pricing
+              </Link>
+            </li>
+          </ul>
+          <div className="flex-1 sm:hidden" />
+          <button className="text-xs bg-[#52B784] hover:bg-gray-400 text-gray-910 py-2 px-4 rounded-full font-isb">
+            Schedule a Demo
+          </button>
+          <span className="sm:hidden">
+            <Image src={Hamburger} alt={"hamburger"} className="ml-2" />
+          </span>
+        </div>
       </div>
-      <header className="max-w-screen-2xl mx-auto bg-gray-100 ball pt-48 -mt-20">
+      <header className="max-w-screen-2xl mx-auto ball pt-48 -mt-20">
         <div className="text-center flex flex-col items-center ">
           <div className="flex items-center justify-center gap-3">
-            <div className="text-xs font-semibold bg-purple-100 px-2 py-1 rounded-md text-[#181818]">
+            <div className="text-xs font-im bg-purple-100 px-2 py-1 rounded-md text-[#181818]">
               New
             </div>
             <span className="text-sm text-gray-50 font-ttr flex items-center gap-3">
