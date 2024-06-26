@@ -12,7 +12,7 @@ export default function Home() {
       <div className="sticky top-0 px-6 z-10">
         <div className="max-w-[48.75rem] h-16 m-auto rounded-full p-4 flex items-center backdrop-blur bg-black/80 ">
           <Image src={Logo} alt={"Logo"} className="ml-2" />
-          <ul className="flex-1 hidden md:flex justify-center gap-10 font-cm">
+          <ul className="flex-1 hidden md:!flex justify-center gap-10 font-cm">
             <li>
               <span className="flex items-baseline text-white gap-2">
                 Suite <Image src={ArrowDown} alt={"Down arrow"} />
@@ -61,7 +61,7 @@ export default function Home() {
             <button className="text-xs bg-[#52B784] hover:bg-gray-400 text-gray-910 py-2 px-4 rounded-full font-isb">
               Schedule a Demo
             </button>
-            <button className="text-xs py-2 px-4 rounded-full font-isb hidden md:flex items-center gap-2 border border-white text-white">
+            <button className="text-xs py-2 px-4 rounded-full font-isb hidden md:!flex items-center gap-2 border border-white text-white">
               <span className="h-2 w-2 bg-orange-500 rounded-full" />
               Next live demo: Today 2pm on X
             </button>
@@ -372,8 +372,8 @@ export default function Home() {
           className=""
         />
         <h3 className="text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#45706E] to-[#82D5D0] mt-10 relative">
-          Finally an EHR providers actually love.
-          <div className="absolute bg-[#275957] w-[7.25rem] h-0.5 bottom-[0.3rem] " />
+          Finally an EHR providers <i>actually</i> love.
+          <div className="absolute bg-[#275957] w-[7.25rem] h-[3px] bottom-[0.2rem] left-[26.7rem]" />
         </h3>
         <div className="mt-10">
           <button className="font-isb py-5 px-6 bg-gradient-to-r from-[#548F8C] to-[#33B4AD] hover:bg-gray-400 text-gray-910 rounded-full">
@@ -382,7 +382,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="max-w-screen-2xl mx-auto pt-20 pb-40 px-24 bg-[#192E2C] min-h-[26rem] hidden md:flex">
+      <footer className="max-w-screen-2xl mx-auto pt-20 pb-40 px-24 bg-[#192E2C] min-h-[26rem] hidden lg:flex">
         <div className="flex-1 flex flex-col">
           <Image
             src={`/static/images/carbonos/careby-logo.svg`}
