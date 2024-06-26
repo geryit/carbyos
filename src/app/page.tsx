@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="font-cm">
+    <div className="font-cm bg-[#181818]">
       <div className="h-4" />
       <div className="w-full max-w-[48.75rem] sticky top-0 h-16 m-auto rounded-full p-4 flex items-center backdrop-blur bg-black/80 z-10">
         <Image src={Logo} alt={"Logo"} className="ml-2" />
@@ -321,7 +321,28 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="h-48"></footer>
+      <section className="max-w-screen-2xl mx-auto p-[7rem] flex flex-col items-center text-center ">
+        <Image
+          src={`/static/images/carbonos/nice.svg`}
+          width={85}
+          height={0}
+          alt={`icon tick`}
+          className=""
+        />
+        <h3 className="text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#45706E] to-[#82D5D0] mt-10 relative">
+          Finally an EHR providers actually love.
+          <div className="absolute bg-[#275957] w-[7.25rem] h-0.5 bottom-[0.3rem] " />
+        </h3>
+        <div className="mt-10">
+          <button className="font-isb py-5 px-6 bg-gradient-to-r from-[#548F8C] to-[#33B4AD] hover:bg-gray-400 text-gray-910 rounded-full">
+            Let&apos;s Talk
+          </button>
+        </div>
+      </section>
+
+      <footer className="max-w-screen-2xl mx-auto py-32 bg-[#1A2E2C] ">
+        sdf
+      </footer>
     </div>
   );
 }
