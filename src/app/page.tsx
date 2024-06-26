@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="font-cm bg-[#181818]">
+    <div className="font-cm text-white bg-[#181818]">
       <div className="h-4" />
       <div className="w-full max-w-[48.75rem] sticky top-0 h-16 m-auto rounded-full p-4 flex items-center backdrop-blur bg-black/80 z-10">
         <Image src={Logo} alt={"Logo"} className="ml-2" />
@@ -34,7 +34,7 @@ export default function Home() {
       <header className="max-w-screen-2xl mx-auto bg-gray-100 ball pt-48 -mt-20">
         <div className="text-center flex flex-col items-center ">
           <div className="flex items-center justify-center gap-3">
-            <div className="text-xs font-semibold bg-purple-100 px-2 py-1 rounded-md">
+            <div className="text-xs font-semibold bg-purple-100 px-2 py-1 rounded-md text-[#181818]">
               New
             </div>
             <span className="text-sm text-gray-50 font-ttr flex items-center gap-3">
@@ -340,8 +340,44 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="max-w-screen-2xl mx-auto py-32 bg-[#1A2E2C] ">
-        sdf
+      <footer className="max-w-screen-2xl mx-auto pt-20 pb-40 px-24 bg-[#192E2C] flex min-h-[26rem]">
+        <div className="flex-1 flex flex-col">
+          <Image
+            src={`/static/images/carbonos/careby-logo.svg`}
+            width={95}
+            height={0}
+            alt={`careby logo`}
+            className=""
+          />
+          <p className="flex-1 mt-[0.7rem] font-ttr text-sm max-w-[33.75rem]">
+            CareBy, powered by Carbon Health, helps businesses optimize every
+            part of their operations, including an AI-powered EHR and Billing
+            Hub, complete RCM management, and patient app.
+          </p>
+          <p className="font-ttr text-sm">© 2024 Carbon Health Inc.</p>
+        </div>
+
+        <div className="w-[21rem] mt-14">
+          <ul className="flex flex-col gap-10">
+            {["Suite", "Features", "Pricing"].map((item) => (
+              <li key={item} className="flex gap-2 items-center">
+                <Image
+                  src={`/static/images/carbonos/arrow-right2.svg`}
+                  width={10}
+                  height={0}
+                  alt={`arrow right`}
+                />
+                <span className="font-ib">{item}</span>
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-8">
+            <button className="text-xs bg-white hover:bg-gray-400 text-gray-910 py-2 px-4 rounded-full font-isb">
+              Schedule a Demo
+            </button>
+          </div>
+        </div>
       </footer>
     </div>
   );
