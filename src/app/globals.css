@@ -31,8 +31,8 @@ body {}
 }
 
 .ball {
-  background-color: #1A221E;
-  /* background: radial-gradient(#45775f, #191919 50%);
+  /* background-color: #1A221E;
+  background: radial-gradient(#45775f, #191919 50%);
   background-size: 200% 200%;
   background-repeat: no-repeat;
   animation: moveGradient 30s ease-in-out infinite; */

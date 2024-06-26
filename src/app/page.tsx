@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <div className="font-cm text-white bg-[#181818]">
       <div className="h-4" />
-      <div className="sticky top-0 px-6">
-        <div className="max-w-[48.75rem] h-16 m-auto rounded-full p-4 flex items-center backdrop-blur bg-black/80 z-10">
+      <div className="sticky top-0 px-6 z-10">
+        <div className="max-w-[48.75rem] h-16 m-auto rounded-full p-4 flex items-center backdrop-blur bg-black/80 ">
           <Image src={Logo} alt={"Logo"} className="ml-2" />
           <ul className="flex-1 hidden sm:flex justify-center gap-10 font-cm">
             <li>
@@ -38,7 +38,7 @@ export default function Home() {
           </span>
         </div>
       </div>
-      <header className="max-w-screen-2xl mx-auto ball pt-48 -mt-20">
+      <header className="max-w-screen-2xl mx-auto ball pt-32 sm:pt-48 -mt-20">
         <div className="text-center flex flex-col items-center ">
           <div className="flex items-center justify-center gap-3">
             <div className="text-xs font-im bg-purple-100 px-2 py-1 rounded-md text-[#181818]">
@@ -49,7 +49,7 @@ export default function Home() {
               <Image src={ArrowRight} alt={"arrow right"} />
             </span>
           </div>
-          <h1 className="text-gray-50 mt-6 text-6xl max-w-3xl leading-tight">
+          <h1 className="text-gray-50 mt-6 text-[2rem] sm:text-6xl max-w-3xl leading-tight">
             AI-first EHR, Practice Management & Billing.
           </h1>
 
@@ -61,52 +61,61 @@ export default function Home() {
             <button className="text-xs bg-[#52B784] hover:bg-gray-400 text-gray-910 py-2 px-4 rounded-full font-isb">
               Schedule a Demo
             </button>
-            <button className="text-xs py-2 px-4 rounded-full font-isb flex items-center gap-2 border border-white text-white">
+            <button className="text-xs py-2 px-4 rounded-full font-isb hidden sm:flex items-center gap-2 border border-white text-white">
               <span className="h-2 w-2 bg-orange-500 rounded-full" />
               Next live demo: Today 2pm on X
             </button>
           </div>
 
-          <div className="mt-16">
+          <div className="mt-8 sm:mt-16 self-start sm:!self-center ml-4 sm:ml-0">
             <Image
               src="/static/images/carbonos/hero.png"
               width={1076}
               height={576}
               alt="Hero image"
               priority
+              className="max-w-[45.5rem] sm:max-w-full"
             />
           </div>
         </div>
       </header>
-      <section className="min-h-36 flex justify-center items-center ">
+      <section className="min-h-36 flex justify-center items-center text-center px-16">
         <p className="font-cm text-white text-2xl">
           Trusted by 1,200+ providers, 200+ clinics and counting...
         </p>
       </section>
-      <section className="max-w-screen-2xl mx-auto h-[67.5rem] ball relative flex justify-end py-20 px-36">
+      <section className="max-w-screen-2xl mx-auto lg:min-h-[67.5rem] ball relative flex flex-col lg:flex-row justify-end pt-80 lg:pt-0 pb-80 lg:pb-20 px-6 lg:px-36 overflow-hidden">
         <Image
           src="/static/images/carbonos/tablet-screen1.png"
           width={714}
           height={714}
           alt="Tablet screen 1"
-          className="absolute top-0 left-0"
+          className="max-w-full absolute left-0 top-0 hidden lg:block"
         />
         <Image
           src="/static/images/carbonos/tablet-screen2.png"
           width={1829 / 2}
           height={1248 / 2}
           alt="Tablet screen 2"
-          className="absolute left-0 bottom-0"
+          className="absolute left-0 bottom-0 hidden lg:block"
         />
         <Image
           src="/static/images/carbonos/mobile-screen1.png"
           width={1168 / 2}
           height={950 / 2}
           alt="Mobile screen 1"
-          className="absolute right-0 bottom-0"
+          className="absolute right-0 bottom-0 hidden lg:block"
         />
 
-        <div className="max-w-[35rem]">
+        <Image
+          src="/static/images/carbonos/tablet-screen1.png"
+          width={714}
+          height={714}
+          alt="Tablet screen 1"
+          className="lg:hidden max-w-[30rem] absolute -left-12 -top-16 rotate-[15deg]"
+        />
+
+        <div className="max-w-[35rem] self-center lg:!self-start">
           <h2 className="text-white">
             You take care of your patients & clinic, we will handle everything
             else.
@@ -116,7 +125,7 @@ export default function Home() {
               Schedule a Demo
             </button>
           </div>
-          <ul className="mt-16 grid grid-cols-2 gap-y-3 gap-x-4">
+          <ul className="mt-8 lg:mt-16 grid grid-cols-none lg:grid-cols-2 gap-y-6 lg:gap-y-3 gap-x-4">
             {[
               {
                 icon: "ehr",
@@ -157,6 +166,13 @@ export default function Home() {
             ))}
           </ul>
         </div>
+        <Image
+          src="/static/images/carbonos/tablet-screen2.png"
+          width={1829 / 2}
+          height={1248 / 2}
+          alt="Tablet screen 2"
+          className="lg:hidden absolute max-w-[35rem] -left-4 -bottom-20 rotate-[15deg]"
+        />
       </section>
       <section className="max-w-screen-2xl mx-auto py-32 bg-[#1A2E2C]">
         <div className="grid grid-cols-2 gap-5">
