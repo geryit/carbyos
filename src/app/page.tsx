@@ -38,7 +38,7 @@ export default function Home() {
           </span>
         </div>
       </div>
-      <header className="max-w-screen-2xl mx-auto lg:ball pt-32 md:pt-48 -mt-20">
+      <header className="max-w-screen-2xl mx-auto ball pt-32 md:pt-48 -mt-20">
         <div className="text-center flex flex-col items-center ">
           <div className="flex items-center justify-center gap-3">
             <div className="text-xs font-im bg-purple-100 px-2 py-1 rounded-md text-[#181818]">
@@ -84,7 +84,7 @@ export default function Home() {
           Trusted by 1,200+ providers, 200+ clinics and counting...
         </p>
       </section>
-      <section className="max-w-screen-2xl mx-auto lg:min-h-[67.5rem] lg:ball relative flex flex-col lg:flex-row justify-end pt-80 lg:pt-0 pb-60 lg:pb-20 px-6 lg:px-36 overflow-hidden">
+      <section className="max-w-screen-2xl mx-auto lg:min-h-[67.5rem] ball relative flex flex-col lg:flex-row justify-end pt-80 lg:pt-16 pb-60 lg:pb-20 px-6 lg:px-36 overflow-hidden">
         <Image
           src="/static/images/carbonos/tablet-screen1.png"
           width={714}
@@ -189,7 +189,7 @@ export default function Home() {
           className="lg:hidden absolute max-w-[35rem] -left-4 -bottom-20 rotate-[15deg]"
         />
       </section>
-      <section className="max-w-screen-2xl mx-auto py-10 md:py-32 bg-[#1A2E2C]">
+      <section className="max-w-screen-2xl mx-auto py-10 md:!py-32 bg-[#1A2E2C]">
         <div className="grid md:grid-cols-2 gap-5">
           <div className="grid gap-8">
             <Image
