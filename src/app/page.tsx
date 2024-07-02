@@ -19,7 +19,7 @@ export default function Home() {
               </span>
             </li>
             <li>
-              <Link href="#" className=" text-white">
+              <Link href="#features" className=" text-white">
                 Features
               </Link>
             </li>
@@ -84,7 +84,10 @@ export default function Home() {
           Trusted by 1,200+ providers, 200+ clinics and counting...
         </p>
       </section>
-      <section className="max-w-screen-2xl mx-auto lg:min-h-[67.5rem] ball relative flex flex-col lg:flex-row justify-end pt-80 lg:pt-20 pb-60 lg:pb-20 px-6 lg:!px-36 overflow-hidden">
+      <section
+        id="features"
+        className="max-w-screen-2xl mx-auto lg:min-h-[67.5rem] ball relative flex flex-col lg:flex-row justify-end pt-80 lg:pt-20 pb-60 lg:pb-20 px-6 lg:!px-36 overflow-hidden"
+      >
         <Image
           src="/static/images/carbonos/tablet-screen1.png"
           width={714}
