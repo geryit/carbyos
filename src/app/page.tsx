@@ -84,7 +84,7 @@ export default function Home() {
           Trusted by 1,200+ providers, 200+ clinics and counting...
         </p>
       </section>
-      <section className="max-w-screen-2xl mx-auto lg:min-h-[67.5rem] ball relative flex flex-col lg:flex-row justify-end pt-80 lg:pt-16 pb-60 lg:pb-20 px-6 lg:px-36 overflow-hidden">
+      <section className="max-w-screen-2xl mx-auto lg:min-h-[67.5rem] ball relative flex flex-col lg:flex-row justify-end pt-80 lg:pt-20 pb-60 lg:pb-20 px-6 lg:!px-36 overflow-hidden">
         <Image
           src="/static/images/carbonos/tablet-screen1.png"
           width={714}
@@ -93,7 +93,7 @@ export default function Home() {
           className="absolute left-0 top-0 hidden lg:block"
           sizes="100vw"
           style={{
-            width: "50%",
+            width: "46%",
             height: "auto",
           }}
         />
@@ -105,7 +105,7 @@ export default function Home() {
           className="absolute left-0 bottom-0 hidden lg:block"
           sizes="100vw"
           style={{
-            width: "50%",
+            width: "60%",
             height: "auto",
           }}
         />
@@ -117,7 +117,7 @@ export default function Home() {
           className="absolute right-0 bottom-0 hidden lg:block"
           sizes="100vw"
           style={{
-            width: "50%",
+            width: "39%",
             height: "auto",
           }}
         />
@@ -214,7 +214,7 @@ export default function Home() {
 
           <ul className="grid grid-cols-2 gap-y-16 mt-4 px-6 md:pr-[9.125rem]">
             {[
-              ["2000", "Providers using CareBy"],
+              ["2000", "Providers using CarbyOs"],
               ["500K+", "AI-powered charts created"],
               ["1,200", "Keystrokes saved per visit"],
               ["60 mins", "Training to EHR fluency"],
@@ -385,14 +385,14 @@ export default function Home() {
       <footer className="max-w-screen-2xl mx-auto pt-20 pb-40 px-24 bg-[#192E2C] min-h-[26rem] hidden lg:flex">
         <div className="flex-1 flex flex-col">
           <Image
-            src={`/static/images/carbonos/careby-logo.svg`}
-            width={95}
+            src={Logo}
+            width={120}
             height={0}
-            alt={`careby logo`}
+            alt={`carbyos logo`}
             className=""
           />
           <p className="flex-1 mt-[0.7rem] font-ttr text-sm max-w-[33.75rem]">
-            CareBy, powered by Carbon Health, helps businesses optimize every
+            CarbyOs, powered by Carbon Health, helps businesses optimize every
             part of their operations, including an AI-powered EHR and Billing
             Hub, complete RCM management, and patient app.
           </p>
